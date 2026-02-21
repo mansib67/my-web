@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mansib Bhuiyan | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        Mansib Bhuiyan
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button">Menu</button>
+      <nav class="nav" id="nav">
+        <a data-page="index.html" href="index.html">Home</a>
+        <a data-page="about.html" href="about.html">About</a>
+        <a data-page="projects.html" href="projects.html">Projects</a>
+        <a data-page="gallery.html" href="gallery.html">Gallery</a>
+        <a data-page="contact.html" class="btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="section">
+      <h2 class="reveal">Contact</h2>
+
+      <div class="grid">
+        <div class="card half reveal">
+          <h3>GitHub</h3>
+          <p><a class="link" href="https://github.com/mansib67" target="_blank" rel="noreferrer">github.com/mansib67</a></p>
+          <p style="margin-top:10px; color:var(--muted);">This is where my code and commits are.</p>
+        </div>
+
+        <div class="card half reveal">
+          <h3>Live Site</h3>
+          <p><a class="link" href="https://mansib67.github.io/my-web/" target="_blank" rel="noreferrer">mansib67.github.io/my-web/</a></p>
+          <p style="margin-top:10px; color:var(--muted);">Hosted with GitHub Pages.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:16px;">
+        <h3>Message</h3>
+        <p style="margin:0 0 12px; color:var(--muted);">
+          This is a front end form for now. It shows layout and interaction, even if it doesn’t send messages yet.
+        </p>
+
+        <div class="grid" style="gap:12px;">
+          <div class="card" style="grid-column: span 6; padding:14px;">
+            <strong>Name</strong>
+            <input class="input" type="text" placeholder="Your name" />
+          </div>
+          <div class="card" style="grid-column: span 6; padding:14px;">
+            <strong>Topic</strong>
+            <input class="input" type="text" placeholder="Website, project, question..." />
+          </div>
+          <div class="card" style="grid-column: span 12; padding:14px;">
+            <strong>Message</strong>
+            <input class="input" type="text" placeholder="Write something here..." />
+          </div>
+          <div style="grid-column: span 12;">
+            <a class="action-btn primary" href="contact.html" onclick="alert('This is a demo form for class.'); return false;">Send (demo)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">© 2026 Mansib Bhuiyan</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
