@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mansib Bhuiyan | About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        Mansib Bhuiyan
+      </a>
+      <button class="menu-btn" id="menuBtn" type="button">Menu</button>
+      <nav class="nav" id="nav">
+        <a data-page="index.html" href="index.html">Home</a>
+        <a data-page="about.html" href="about.html">About</a>
+        <a data-page="projects.html" href="projects.html">Projects</a>
+        <a data-page="gallery.html" href="gallery.html">Gallery</a>
+        <a data-page="contact.html" class="btn" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="section">
+      <h2 class="reveal">About Me</h2>
+
+      <div class="grid">
+        <div class="card half reveal">
+          <h3>Who I am</h3>
+          <p>
+            I’m a high school student in New York City. I’m learning web development and how to publish real projects using GitHub.
+          </p>
+        </div>
+        <div class="card half reveal">
+          <h3>What I’m focused on</h3>
+          <p>
+            Staying consistent, building skills, and creating projects that actually work, not just ideas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-tabs>
+      <h2 class="reveal">More Details</h2>
+
+      <div class="tabs reveal">
+        <button class="tab-btn" data-tab="school" type="button">School</button>
+        <button class="tab-btn" data-tab="program" type="button">STEM Program</button>
+        <button class="tab-btn" data-tab="future" type="button">Future</button>
+      </div>
+
+      <div class="card reveal" data-panel="school">
+        <h3>School</h3>
+        <p>I’m in 11th grade in NYC. I’m focused on improving my skills in a practical way and preparing for the next step.</p>
+        <ul class="list">
+          <li>Learning how to write clean HTML and CSS</li>
+          <li>Understanding GitHub commits and deployments</li>
+          <li>Building projects I can actually show</li>
+        </ul>
+      </div>
+
+      <div class="card reveal" data-panel="program">
+        <h3>CCNY STEM Institute</h3>
+        <p>This course is teaching me how to work with GitHub Pages and build websites correctly, including assets like images inside the repo.</p>
+        <ul class="list">
+          <li>Repo setup and file structure</li>
+          <li>Publishing a live site</li>
+          <li>Using AI as a helper while still understanding everything</li>
+        </ul>
+      </div>
+
+      <div class="card reveal" data-panel="future">
+        <h3>Future</h3>
+        <p>I’m interested in business and finance, and I want to keep building skills that help me stand out for college and jobs.</p>
+        <ul class="list">
+          <li>Goal: Baruch College</li>
+          <li>Building a portfolio of small projects</li>
+          <li>Improving communication and consistency</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">FAQ</h2>
+      <div class="accordion reveal">
+        <div class="acc-item">
+          <div class="acc-head">How did you build this site?<span>+</span></div>
+          <div class="acc-body">HTML for structure, CSS for design, JavaScript for interactivity, and GitHub Pages for hosting.</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head">Why multiple pages?<span>+</span></div>
+          <div class="acc-body">It feels more like a real website. You can click between pages and explore different sections.</div>
+        </div>
+        <div class="acc-item">
+          <div class="acc-head">Are the gallery images stored locally?<span>+</span></div>
+          <div class="acc-body">Yes. The images are inside the repo in the images folder, not external links.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer reveal">© 2026 Mansib Bhuiyan</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
