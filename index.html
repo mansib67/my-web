@@ -3,348 +3,210 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mansib Bhuiyan | Website</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Your CSS -->
+  <title>Mansib's Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-smooth-scroll="true" tabindex="0">
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <span>Mansib Bhuiyan</span>
+      </a>
 
-  <!-- NAVBAR -->
-  <nav id="topNav" class="navbar navbar-expand-lg navbar-dark sticky-top nav-glass">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">Mansib</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#projects">Project 1</a></li>
-              <li><a class="dropdown-item" href="#projects">Project 2</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li>
-                <a class="dropdown-item" href="https://www.youtube.com" target="_blank" rel="noreferrer">
-                  Project Demo (YouTube)
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="btn btn-sm btn-primary ms-lg-2" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO / CAROUSEL -->
-  <header id="home" class="hero">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-      </div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="hero-slide hero-slide-1">
-            <div class="container hero-content">
-              <p class="badge text-bg-light badge-soft">Student • NYC</p>
-              <h1 class="display-5 fw-bold mb-2">Building my first GitHub Pages website</h1>
-              <p class="lead mb-4">HTML, CSS, Bootstrap and a clean layout you can actually show off.</p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-primary" href="#projects">See Projects</a>
-                <a class="btn btn-outline-light" href="#about">About Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="hero-slide hero-slide-2">
-            <div class="container hero-content">
-              <p class="badge text-bg-light badge-soft">Fast • Simple • Clean</p>
-              <h2 class="display-6 fw-bold mb-2">A one page layout that feels professional</h2>
-              <p class="lead mb-4">Sections, navigation, cards, gallery, and a working contact form layout.</p>
-              <a class="btn btn-primary" href="#gallery">Open Gallery</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="hero-slide hero-slide-3">
-            <div class="container hero-content">
-              <p class="badge text-bg-light badge-soft">GitHub Pages</p>
-              <h2 class="display-6 fw-bold mb-2">Deployed and live</h2>
-              <p class="lead mb-4">The goal is to publish it, update it, and show your commits.</p>
-              <a class="btn btn-primary" href="#contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <nav class="nav" aria-label="Site">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="section-pad">
-    <div class="container">
-      <div class="section-title text-center mb-4">
-        <h2 class="fw-bold">About</h2>
-        <p class="text-secondary mb-0">A quick intro and what I’m working on right now.</p>
-      </div>
+  <!-- Hero -->
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <div class="kicker">NYC student • Web dev • AI tools</div>
+          <h1>My first GitHub Pages website</h1>
+          <p>
+            This site is for my class assignment. I built it with HTML + CSS, and I’m using AI to help me design it,
+            organize it, and improve it step by step.
+          </p>
 
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5">
-          <div class="img-card">
-            <div class="img-placeholder">
-              <div>
-                <div class="fs-5 fw-bold">Mansib Bhuiyan</div>
-                <div class="text-secondary">Student • Web + AI</div>
-              </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#gallery">View the Gallery</a>
+            <a class="btn btn-ghost" href="#projects">See Projects</a>
+          </div>
+        </div>
+
+        <aside class="mini-card reveal">
+          <div class="stat">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>What this is</strong>
+              <span>A simple personal website hosted on GitHub Pages.</span>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="card soft-card p-4">
-            <h3 class="h4 fw-bold">My Journey</h3>
-            <p class="text-secondary mb-3">
-              I’m a high school student in NYC learning web development and using AI tools for class projects.
-              I like building simple things that look clean and actually work.
-            </p>
-            <a class="btn btn-outline-primary btn-sm" href="#projects">Learn more</a>
-          </div>
-
-          <div class="card soft-card p-4 mt-3">
-            <h3 class="h4 fw-bold">What I’m focusing on</h3>
-            <p class="text-secondary mb-3">
-              Right now I’m practicing layouts, responsive design, and how to deploy projects on GitHub Pages.
-              Next I want to add a real project gallery and better project descriptions.
-            </p>
-            <a class="btn btn-outline-primary btn-sm" href="#contact">Contact me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES / SKILLS -->
-  <section id="services" class="section-pad section-alt">
-    <div class="container">
-      <div class="section-title text-center mb-4">
-        <h2 class="fw-bold">Skills</h2>
-        <p class="text-secondary mb-0">The tools I used to build this page.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card soft-card h-100">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">HTML Structure</h5>
-              <p class="card-text text-secondary">
-                Clean sections with IDs so the nav links jump to the right place.
-              </p>
-              <div class="small text-secondary">Updated recently</div>
+          <div class="stat">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Tools</strong>
+              <span>HTML, CSS, and GitHub Pages (plus AI help for design).</span>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card soft-card h-100">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">CSS Styling</h5>
-              <p class="card-text text-secondary">
-                Custom colors, spacing, and a modern look using your own stylesheet.
-              </p>
-              <div class="small text-secondary">Updated recently</div>
+          <div class="stat">
+            <div class="dot" aria-hidden="true"></div>
+            <div>
+              <strong>Goal</strong>
+              <span>Clean layout, readable light mode, and smooth interactions.</span>
             </div>
           </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About + Projects -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal">About</h2>
+
+      <div class="grid">
+        <div class="card half reveal">
+          <h3>Who I am</h3>
+          <p>
+            I’m a high school student in NYC. I’m learning web development and practicing how to use GitHub to publish
+            a website.
+          </p>
         </div>
 
-        <div class="col-md-4">
-          <div class="card soft-card h-100">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Bootstrap Layout</h5>
-              <p class="card-text text-secondary">
-                Responsive grid, navbar, cards, and carousel without writing everything from scratch.
-              </p>
-              <div class="small text-secondary">Updated recently</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
-        <a class="btn btn-primary" href="#projects">See Projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section-pad">
-    <div class="container">
-      <div class="section-title text-center mb-4">
-        <h2 class="fw-bold">Projects</h2>
-        <p class="text-secondary mb-0">A couple things I can build and improve over time.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card soft-card h-100">
-            <div class="card-body">
-              <h5 class="fw-bold">GitHub Pages Website</h5>
-              <p class="text-secondary">
-                A live site deployed from a GitHub repo using HTML, CSS, and Bootstrap.
-              </p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="#home">Preview</a>
-                <a class="btn btn-outline-secondary btn-sm" href="https://github.com/mansib67/my-web" target="_blank" rel="noreferrer">Repo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card soft-card h-100">
-            <div class="card-body">
-              <h5 class="fw-bold">AI Class Assignment</h5>
-              <p class="text-secondary">
-                Using AI tools to speed up coding, check mistakes, and improve how the project looks.
-              </p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="#services">What I used</a>
-                <a class="btn btn-outline-secondary btn-sm" href="https://www.youtube.com" target="_blank" rel="noreferrer">Demo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="cta mt-5">
-        <div class="row g-3 align-items-center">
-          <div class="col-lg-8">
-            <h3 class="fw-bold mb-1">Check out my GitHub profile</h3>
-            <p class="text-secondary mb-0">All my updates and commits are there.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a class="btn btn-primary" href="https://github.com/mansib67" target="_blank" rel="noreferrer">Open GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="section-pad section-alt">
-    <div class="container">
-      <div class="section-title text-center mb-4">
-        <h2 class="fw-bold">Gallery</h2>
-        <p class="text-secondary mb-0">Placeholders for now. You can upload real images later.</p>
-      </div>
-
-      <div class="row g-3">
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-        <div class="col-6 col-md-4"><div class="gallery-tile"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-pad">
-    <div class="container">
-      <div class="section-title text-center mb-4">
-        <h2 class="fw-bold">Contact</h2>
-        <p class="text-secondary mb-0">This form is for layout. It won’t email anyone unless you add backend code later.</p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card soft-card p-4">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label">Name</label>
-                  <input class="form-control" type="text" placeholder="Your name">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Email</label>
-                  <input class="form-control" type="email" placeholder="name@email.com">
-                  <div class="form-text">We won’t share your email.</div>
-                </div>
-
-                <div class="col-md-6">
-                  <label class="form-label">Grade</label>
-                  <input class="form-control" type="text" placeholder="11th / 12th">
-                </div>
-
-                <div class="col-md-6">
-                  <label class="form-label">City</label>
-                  <select class="form-select">
-                    <option selected>Choose…</option>
-                    <option>New York City</option>
-                    <option>Queens</option>
-                    <option>Brooklyn</option>
-                    <option>Manhattan</option>
-                    <option>Bronx</option>
-                    <option>Staten Island</option>
-                  </select>
-                </div>
-
-                <div class="col-12">
-                  <label class="form-label">Message</label>
-                  <textarea class="form-control" rows="4" placeholder="Write your message..."></textarea>
-                </div>
-
-                <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
-                  <button class="btn btn-primary" type="button">Submit</button>
-                  <a class="btn btn-outline-secondary" href="https://github.com/mansib67" target="_blank" rel="noreferrer">GitHub</a>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <p class="text-center text-secondary small mt-3 mb-0">
-            © 2026 Mansib Bhuiyan
+        <div class="card half reveal">
+          <h3>What I’m learning</h3>
+          <p>
+            How to create files in a repo, commit changes, and deploy a live website using GitHub Pages.
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="projects" class="section">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="grid">
+        <div class="card half reveal">
+          <h3>GitHub Pages Website</h3>
+          <p>
+            A one page personal site using HTML + CSS, hosted on GitHub Pages.
+          </p>
+          <ul>
+            <li>Sections: About, Projects, Gallery, Contact</li>
+            <li>Light theme with smooth animations</li>
+          </ul>
+        </div>
+
+        <div class="card half reveal">
+          <h3>AI Class Assignment</h3>
+          <p>
+            Using AI responsibly to improve layout, writing, and design while still understanding what I’m changing.
+          </p>
+          <ul>
+            <li>Better typography and spacing</li>
+            <li>Cleaner colors and readability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+      <h2 class="section-title reveal">NYC Gallery</h2>
+
+      <div class="card gallery reveal">
+        <p style="margin-top:0;">
+          A few NYC spots I like. These are free photos from Unsplash.
+        </p>
+
+        <div class="gallery-grid" style="margin-top:12px;">
+          <a class="photo" href="https://unsplash.com/photos/TaCk3NspYe0" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/TaCk3NspYe0/1200x800" alt="Times Square" />
+            <div class="cap">Times Square <small>Manhattan</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/RHb_8qqV1VM" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/RHb_8qqV1VM/1200x800" alt="Hudson Yards Vessel" />
+            <div class="cap">Hudson Yards <small>The Vessel</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/E4HIB5EueNw" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/E4HIB5EueNw/1200x800" alt="Brooklyn Bridge" />
+            <div class="cap">Brooklyn Bridge <small>Brooklyn</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/-gy4s9SQ1RI" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/-gy4s9SQ1RI/1200x800" alt="Statue of Liberty" />
+            <div class="cap">Statue of Liberty <small>Liberty Island</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/R-FkIwbsvJw" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/R-FkIwbsvJw/1200x800" alt="Roosevelt Island Tramway" />
+            <div class="cap">Roosevelt Island <small>Tramway</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/aRnOt6xDl2I" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/aRnOt6xDl2I/1200x800" alt="Coney Island" />
+            <div class="cap">Coney Island <small>Brooklyn</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/6V-Pmtg_4IU" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/6V-Pmtg_4IU/1200x800" alt="Staten Island Ferry" />
+            <div class="cap">Staten Island Ferry <small>Harbor</small></div>
+          </a>
+
+          <a class="photo" href="https://unsplash.com/photos/WNG1tCKuFaM" target="_blank" rel="noreferrer">
+            <img src="https://source.unsplash.com/WNG1tCKuFaM/1200x800" alt="NYC skyline from the ferry" />
+            <div class="cap">Lower Manhattan <small>Skyline</small></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal">Contact</h2>
+
+      <div class="grid">
+        <div class="card half reveal">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/mansib67" target="_blank" rel="noreferrer">github.com/mansib67</a>
+          </p>
+        </div>
+
+        <div class="card half reveal">
+          <h3>Website Link</h3>
+          <p>
+            <a href="https://mansib67.github.io/my-web/" target="_blank" rel="noreferrer">mansib67.github.io/my-web/</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="reveal">© 2026 Mansib Bhuiyan</div>
+    </footer>
+  </main>
+
+  <script>
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) e.target.classList.add("show");
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
