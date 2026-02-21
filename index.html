@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mansib's Website</title>
+  <title>Mansib Bhuiyan | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="index.html">
         <span class="logo" aria-hidden="true"></span>
         Mansib Bhuiyan
       </a>
@@ -18,145 +17,74 @@
       <button class="menu-btn" id="menuBtn" type="button">Menu</button>
 
       <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a class="btn" href="#contact">Contact</a>
+        <a data-page="index.html" href="index.html">Home</a>
+        <a data-page="about.html" href="about.html">About</a>
+        <a data-page="projects.html" href="projects.html">Projects</a>
+        <a data-page="gallery.html" href="gallery.html">Gallery</a>
+        <a data-page="contact.html" class="btn" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container" id="top">
+  <main class="container page">
     <section class="hero">
       <div class="hero-card reveal">
-        <div class="kicker">NYC student • Web dev • AI tools</div>
+        <span class="kicker">NYC student • Web dev • AI tools</span>
         <h1>My GitHub Pages website</h1>
         <p class="lead">
-          I’m building this for class using HTML and CSS, and improving it step by step.
-          The goal is a clean design, readable light mode, smooth scrolling, and a real image gallery saved in my GitHub repo.
+          This is a multi page site built with HTML, CSS, and JavaScript. I’m using AI as a helper while still understanding every change I commit.
+          Click around to explore my projects, NYC gallery, and what I’m working toward for college.
         </p>
 
         <div class="actions">
-          <a class="action-btn primary" href="#gallery">NYC Gallery</a>
-          <a class="action-btn secondary" href="#projects">Projects</a>
+          <a class="action-btn primary" href="gallery.html">Open NYC Gallery</a>
+          <a class="action-btn secondary" href="about.html">Learn about me</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <h2 class="reveal">About</h2>
+    <section class="section">
+      <h2 class="reveal">Quick Overview</h2>
+      <div class="grid">
+        <div class="card third reveal">
+          <span class="badge">School</span>
+          <h3 style="margin-top:10px;">11th grade in NYC</h3>
+          <p>Focused on building skills, staying consistent, and learning by doing.</p>
+        </div>
+
+        <div class="card third reveal">
+          <span class="badge">Program</span>
+          <h3 style="margin-top:10px;">CCNY STEM Institute</h3>
+          <p>Using GitHub and AI tools for class projects, and improving step by step.</p>
+        </div>
+
+        <div class="card third reveal">
+          <span class="badge">Goal</span>
+          <h3 style="margin-top:10px;">Baruch College</h3>
+          <p>Interested in business/finance, and building real projects to show growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">Explore</h2>
       <div class="grid">
         <div class="card half reveal">
-          <h3>Who I am</h3>
-          <p>I’m a high school student in NYC learning web development and how to publish projects using GitHub Pages.</p>
+          <h3>About page</h3>
+          <p>More details about my background, what I’m learning, and what I’m aiming for.</p>
+          <p style="margin-top:10px;"><a class="link" href="about.html">Go to About</a></p>
         </div>
         <div class="card half reveal">
-          <h3>What I’m learning</h3>
-          <p>How to edit files in a repo, commit changes, deploy a live site, and improve design and readability.</p>
+          <h3>Projects page</h3>
+          <p>My current projects plus what I want to build next.</p>
+          <p style="margin-top:10px;"><a class="link" href="projects.html">Go to Projects</a></p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2 class="reveal">Projects</h2>
-      <div class="grid">
-        <div class="card half reveal">
-          <h3>GitHub Pages Website</h3>
-          <p>A one page site with sections and a gallery, hosted on GitHub Pages.</p>
-        </div>
-        <div class="card half reveal">
-          <h3>AI Class Assignment</h3>
-          <p>Using AI to help with layout and improvements while still understanding every change I commit.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="gallery">
-      <h2 class="reveal">NYC Gallery</h2>
-
-      <div class="card reveal">
-        <p class="lead" style="margin:0 0 12px;">
-          These images are stored inside my GitHub repo (not external links), so they load reliably like the teacher’s site.
-        </p>
-
-        <div class="gallery-grid">
-          <div class="photo">
-            <img src="images/1_times_square_night_2013.jpg" alt="Times Square at night">
-            <div class="cap">Times Square <small>Manhattan</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/The_Vessel_November_2024_001.jpg" alt="The Vessel at Hudson Yards">
-            <div class="cap">Hudson Yards (The Vessel) <small>Manhattan</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Brooklyn_Bridge_Postdlf.jpg" alt="Brooklyn Bridge">
-            <div class="cap">Brooklyn Bridge <small>Brooklyn</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Statue_of_Liberty.jpg" alt="Statue of Liberty">
-            <div class="cap">Statue of Liberty <small>Liberty Island</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Roosevelt_Island_Tramway.jpg" alt="Roosevelt Island Tramway">
-            <div class="cap">Roosevelt Island Tramway <small>Queens</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/NYC_Coney_Island_beach.jpg" alt="Coney Island beach">
-            <div class="cap">Coney Island <small>Brooklyn</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Beach_at_Coney_Island.JPG" alt="Coney Island beach wide view">
-            <div class="cap">Coney Island Beach <small>Brooklyn</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Staten_Island_Ferry.jpg" alt="Staten Island Ferry">
-            <div class="cap">Staten Island Ferry <small>Harbor</small></div>
-          </div>
-
-          <div class="photo">
-            <img src="images/Central_Park_New_York_City_New_York_23_cropped.jpg" alt="Central Park">
-            <div class="cap">Central Park <small>Manhattan</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <h2 class="reveal">Contact</h2>
-      <div class="grid">
-        <div class="card half reveal">
-          <h3>GitHub</h3>
-          <p><a href="https://github.com/mansib67" target="_blank" rel="noreferrer">github.com/mansib67</a></p>
-        </div>
-        <div class="card half reveal">
-          <h3>Live Site</h3>
-          <p><a href="https://mansib67.github.io/my-web/" target="_blank" rel="noreferrer">mansib67.github.io/my-web/</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="reveal">© 2026 Mansib Bhuiyan</footer>
+    <footer class="footer reveal">© 2026 Mansib Bhuiyan</footer>
   </main>
 
-  <script>
-    // Mobile menu
-    const btn = document.getElementById("menuBtn");
-    const nav = document.getElementById("nav");
-    btn.addEventListener("click", () => nav.classList.toggle("show"));
-
-    // Reveal animation
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("show"); });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
