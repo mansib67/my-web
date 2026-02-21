@@ -8,205 +8,155 @@
 </head>
 
 <body>
-  <!-- Sticky Header -->
-  <header class="site-header">
+  <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <div class="brand-badge" aria-hidden="true"></div>
-        <span>Mansib Bhuiyan</span>
+        <span class="logo" aria-hidden="true"></span>
+        Mansib Bhuiyan
       </a>
 
-      <nav class="nav" aria-label="Site">
+      <button class="menu-btn" id="menuBtn" type="button">Menu</button>
+
+      <nav class="nav" id="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a class="btn" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main id="top" class="container">
+  <main class="container" id="top">
     <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-card reveal">
-          <div class="kicker">NYC student • Web dev • AI tools</div>
-          <h1>My first GitHub Pages website</h1>
-          <p>
-            This site is for my class assignment. I built it with HTML + CSS, and I’m using AI to help me design it,
-            organize it, and improve it step by step.
-          </p>
+      <div class="hero-card reveal">
+        <div class="kicker">NYC student • Web dev • AI tools</div>
+        <h1>My GitHub Pages website</h1>
+        <p class="lead">
+          I’m building this for class using HTML and CSS, and I’m improving it step by step.
+          The goal is a clean design, readable light mode, smooth scrolling, and a real image gallery like the teacher demo.
+        </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#gallery">View the Gallery</a>
-            <a class="btn btn-ghost" href="#projects">See Projects</a>
-          </div>
+        <div class="actions">
+          <a class="action-btn primary" href="#gallery">NYC Gallery</a>
+          <a class="action-btn secondary" href="#projects">Projects</a>
         </div>
-
-        <aside class="mini-card reveal">
-          <div class="stat">
-            <div class="dot" aria-hidden="true"></div>
-            <div>
-              <strong>What this is</strong>
-              <span>A simple personal website hosted on GitHub Pages.</span>
-            </div>
-          </div>
-          <div class="stat">
-            <div class="dot" aria-hidden="true"></div>
-            <div>
-              <strong>Tools</strong>
-              <span>HTML, CSS, and GitHub Pages (plus AI help for design).</span>
-            </div>
-          </div>
-          <div class="stat">
-            <div class="dot" aria-hidden="true"></div>
-            <div>
-              <strong>Goal</strong>
-              <span>Clean layout, readable light mode, and smooth interactions.</span>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <!-- About + Projects -->
-    <section id="about" class="section">
-      <h2 class="section-title reveal">About</h2>
-
+    <section class="section" id="about">
+      <h2 class="reveal">About</h2>
       <div class="grid">
         <div class="card half reveal">
           <h3>Who I am</h3>
-          <p>
-            I’m a high school student in NYC. I’m learning web development and practicing how to use GitHub to publish
-            a website.
-          </p>
+          <p>I’m a high school student in NYC learning web development and how to publish projects using GitHub Pages.</p>
         </div>
-
         <div class="card half reveal">
           <h3>What I’m learning</h3>
-          <p>
-            How to create files in a repo, commit changes, and deploy a live website using GitHub Pages.
-          </p>
+          <p>How to edit files in a repo, commit changes, deploy a live website, and improve design and readability.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2 class="section-title reveal">Projects</h2>
-
+    <section class="section" id="projects">
+      <h2 class="reveal">Projects</h2>
       <div class="grid">
         <div class="card half reveal">
           <h3>GitHub Pages Website</h3>
-          <p>
-            A one page personal site using HTML + CSS, hosted on GitHub Pages.
-          </p>
-          <ul>
-            <li>Sections: About, Projects, Gallery, Contact</li>
-            <li>Light theme with smooth animations</li>
-          </ul>
+          <p>One page site with sections and a gallery, hosted on GitHub Pages.</p>
         </div>
-
         <div class="card half reveal">
           <h3>AI Class Assignment</h3>
-          <p>
-            Using AI responsibly to improve layout, writing, and design while still understanding what I’m changing.
-          </p>
-          <ul>
-            <li>Better typography and spacing</li>
-            <li>Cleaner colors and readability</li>
-          </ul>
+          <p>Using AI to help with layout and improvements, while still understanding every change I commit.</p>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="section">
-      <h2 class="section-title reveal">NYC Gallery</h2>
+    <section class="section" id="gallery">
+      <h2 class="reveal">NYC Gallery</h2>
 
-      <div class="card gallery reveal">
-        <p style="margin-top:0;">
-          A few NYC spots I like. These are free photos from Unsplash.
+      <div class="card reveal">
+        <p class="lead" style="margin:0 0 12px;">
+          These images are stored inside my GitHub repo (not lazy links), so they load like the teacher’s site.
         </p>
 
-        <div class="gallery-grid" style="margin-top:12px;">
-          <a class="photo" href="https://unsplash.com/photos/TaCk3NspYe0" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/TaCk3NspYe0/1200x800" alt="Times Square" />
+        <div class="gallery-grid">
+          <div class="photo">
+            <img src="images/times-square.jpg" alt="Times Square">
             <div class="cap">Times Square <small>Manhattan</small></div>
-          </a>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/RHb_8qqV1VM" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/RHb_8qqV1VM/1200x800" alt="Hudson Yards Vessel" />
-            <div class="cap">Hudson Yards <small>The Vessel</small></div>
-          </a>
+          <div class="photo">
+            <img src="images/hudson-yards.jpg" alt="Hudson Yards">
+            <div class="cap">Hudson Yards <small>Manhattan</small></div>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/E4HIB5EueNw" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/E4HIB5EueNw/1200x800" alt="Brooklyn Bridge" />
+          <div class="photo">
+            <img src="images/brooklyn-bridge.jpg" alt="Brooklyn Bridge">
             <div class="cap">Brooklyn Bridge <small>Brooklyn</small></div>
-          </a>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/-gy4s9SQ1RI" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/-gy4s9SQ1RI/1200x800" alt="Statue of Liberty" />
+          <div class="photo">
+            <img src="images/statue-of-liberty.jpg" alt="Statue of Liberty">
             <div class="cap">Statue of Liberty <small>Liberty Island</small></div>
-          </a>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/R-FkIwbsvJw" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/R-FkIwbsvJw/1200x800" alt="Roosevelt Island Tramway" />
-            <div class="cap">Roosevelt Island <small>Tramway</small></div>
-          </a>
+          <div class="photo">
+            <img src="images/roosevelt-island.jpg" alt="Roosevelt Island">
+            <div class="cap">Roosevelt Island <small>Queens</small></div>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/aRnOt6xDl2I" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/aRnOt6xDl2I/1200x800" alt="Coney Island" />
+          <div class="photo">
+            <img src="images/coney-island.jpg" alt="Coney Island">
             <div class="cap">Coney Island <small>Brooklyn</small></div>
-          </a>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/6V-Pmtg_4IU" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/6V-Pmtg_4IU/1200x800" alt="Staten Island Ferry" />
+          <div class="photo">
+            <img src="images/staten-island-ferry.jpg" alt="Staten Island Ferry">
             <div class="cap">Staten Island Ferry <small>Harbor</small></div>
-          </a>
+          </div>
 
-          <a class="photo" href="https://unsplash.com/photos/WNG1tCKuFaM" target="_blank" rel="noreferrer">
-            <img src="https://source.unsplash.com/WNG1tCKuFaM/1200x800" alt="NYC skyline from the ferry" />
-            <div class="cap">Lower Manhattan <small>Skyline</small></div>
-          </a>
+          <div class="photo">
+            <img src="images/nyc-skyline.jpg" alt="NYC Skyline">
+            <div class="cap">NYC Skyline <small>Lower Manhattan</small></div>
+          </div>
+
+          <div class="photo">
+            <img src="images/central-park.jpg" alt="Central Park">
+            <div class="cap">Central Park <small>Manhattan</small></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2 class="section-title reveal">Contact</h2>
-
+    <section class="section" id="contact">
+      <h2 class="reveal">Contact</h2>
       <div class="grid">
         <div class="card half reveal">
           <h3>GitHub</h3>
-          <p>
-            <a href="https://github.com/mansib67" target="_blank" rel="noreferrer">github.com/mansib67</a>
-          </p>
+          <p><a href="https://github.com/mansib67" target="_blank" rel="noreferrer">github.com/mansib67</a></p>
         </div>
-
         <div class="card half reveal">
-          <h3>Website Link</h3>
-          <p>
-            <a href="https://mansib67.github.io/my-web/" target="_blank" rel="noreferrer">mansib67.github.io/my-web/</a>
-          </p>
+          <h3>Live Site</h3>
+          <p><a href="https://mansib67.github.io/my-web/" target="_blank" rel="noreferrer">mansib67.github.io/my-web/</a></p>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="reveal">© 2026 Mansib Bhuiyan</div>
-    </footer>
+    <footer class="reveal">© 2026 Mansib Bhuiyan</footer>
   </main>
 
   <script>
-    // Smooth reveal on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add("show");
-      });
+    // Mobile menu
+    const btn = document.getElementById("menuBtn");
+    const nav = document.getElementById("nav");
+    btn.addEventListener("click", () => nav.classList.toggle("show"));
+
+    // Reveal animation
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("show"); });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
   </script>
 </body>
 </html>
